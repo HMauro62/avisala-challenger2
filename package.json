@@ -1,0 +1,30 @@
+{
+  "name": "avisala_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "pg": "^8.17.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaopaulovca/AvisaLa_Backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joaopaulovca/AvisaLa_Backend/issues"
+  },
+  "homepage": "https://github.com/joaopaulovca/AvisaLa_Backend#readme",
+  "devDependencies": {
+    "sequelize-cli": "^6.6.5"
+  }
+}

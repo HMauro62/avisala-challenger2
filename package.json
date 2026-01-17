@@ -5,12 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.13.2",
     "express": "^5.2.1",
     "pg": "^8.17.1",
     "pg-hstore": "^2.3.4",
@@ -25,6 +27,8 @@
   },
   "homepage": "https://github.com/joaopaulovca/AvisaLa_Backend#readme",
   "devDependencies": {
-    "sequelize-cli": "^6.6.5"
+    "jest": "^30.2.0",
+    "sequelize-cli": "^6.6.5",
+    "supertest": "^7.2.2"
   }
 }

@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/joaopaulovca/AvisaLa_Backend#readme",
   "devDependencies": {
-    "jest": "^30.2.0",
     "sequelize-cli": "^6.6.5",
     "supertest": "^7.2.2"
   }

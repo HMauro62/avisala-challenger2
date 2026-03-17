@@ -35,11 +35,11 @@ async function executarTestes() {
   let testeUsuarioID = ''
   try {
     const userData = {
-      name: 'fulano de tal',
+      name: 'Test user 111',
       data_nascimento: '04.04.1989',
-      email: 'fultal@email.com',
-      username: 'fulano',
-      password: '3456as'
+      email: 'teste@email.com',
+      username: 'test',
+      password: 'test'
     }
     const resposta3 = await axios.post(URL_API + '/users/', userData);
     acertos = acertos + 1;
@@ -52,18 +52,15 @@ async function executarTestes() {
   }
 
   const teste4 = 'Testando requisicao atualizar usuario: '
-  let testeUserID = '7758d134-0705-4928-b801-6f9fd3d2538c';
-
   try {
     const userDataUpdate = {
-      name: 'Azevedo',
+      name: 'Test user atualizado',
       data_nascimento: '04.03.1989',
-      email: 'azevedo24@gmail.com',
-      username: 'azev24',
-      password: '54321as'
+      email: 'teste3@email.com',
+      username: 'test3',
+      password: 'test3'
     }
-
-    const resposta4 = await axios.put(URL_API + '/users/' + testeUserID, userDataUpdate);
+    const resposta4 = await axios.put(URL_API + '/users/' + testeUsuarioID, userDataUpdate);
     acertos = acertos + 1;
     console.log(teste4 + 'sucesso.')
   } catch (erro) {
@@ -86,8 +83,8 @@ async function executarTestes() {
   const teste6 = 'Testando login com usuario existente: '
   try {
     const dadosLogin = {
-      username: 'xyzpto',
-      password: '1234as'
+      username: 'joao',
+      password: 'joao'
     } 
     const resposta6 = await axios.get(URL_API + '/users/loginUsuario', {data: dadosLogin});
     acertos = acertos + 1;
@@ -119,4 +116,3 @@ async function executarTestes() {
 }
 
 executarTestes();
-

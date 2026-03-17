@@ -13,7 +13,7 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data # Persiste os dados do banco de dados
 
-  app:
+  node-app:
     build:
       context: .
       dockerfile: Dockerfile

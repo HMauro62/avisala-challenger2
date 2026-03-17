@@ -1,6 +1,6 @@
 export default {
     dialect: 'postgres',
-    host: '0.0.0.0',
+    host: 'localhost',
     username: 'postgres',
     password: 'postgres',
     database: 'avisaladb',

@@ -1,4 +1,5 @@
 import Sequelize, { Model } from 'sequelize'
+import User from "../models/User.js"
 
 class Post extends Model {
     static init(sequelize) {
@@ -14,7 +15,7 @@ class Post extends Model {
                     allowNull: false
                 },
                 description: {
-                    type: Sequelize.TEXT,
+                    type: Sequelize.STRING,
                     allowNull: false
                 },
                 user_id: {
